@@ -1,0 +1,68 @@
+.hero {
+  width: 640px;
+  padding: 65px 0 0 165px;
+  .overTitle {
+    display: flex;
+    margin-bottom: 20px;
+    .newSign {
+      width: 45px;
+      height: 25px;
+      border-radius: 20px;
+      padding-top: 2px;
+      margin-right: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      background-color: hsl(230, 29%, 20%);
+      color: white;
+    }
+    p {
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: hsl(231, 7%, 65%);
+    }
+  }
+  h1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: hsl(230, 29%, 20%);
+  }
+  .heroText {
+    width: 270px;
+    margin-bottom: 60px;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: hsl(230, 11%, 40%);
+  }
+  .buttonBox {
+    display: flex;
+    align-items: center;
+    button {
+      display: inline-block;
+      width: 185px;
+      height: 48px;
+      padding: 0;
+      margin-right: 20px;
+      border: none;
+      border-radius: 5px;
+      outline: inherit;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: hsl(0, 100%, 68%);
+      color: white;
+    }
+    p {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      color: hsl(231, 7%, 65%);
+    }
+  }
+}

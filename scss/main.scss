@@ -1,2 +1,20 @@
 @import "globals";
 @import "attribution";
+@import "navbar";
+@import "hero";
+
+.background {
+  height: 100vh;
+  background: top 210px right -260px url(/images/illustration-devices.svg) no-repeat;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 745px;
+    height: 427px;
+    z-index: -50;
+    border-radius: 0 0 0 70px;
+    background-color: hsl(207, 33%, 95%);
+  }
+}

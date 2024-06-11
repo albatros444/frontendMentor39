@@ -60,4 +60,123 @@ ul {
   color: hsl(228, 45%, 44%);
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 65px 165px;
+}
+.navbar img {
+  width: 32px;
+  height: 32px;
+}
+.navbar .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+}
+.navbar .links a {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: hsl(230, 29%, 20%);
+}
+.navbar .links .grayDot {
+  width: 6px;
+  height: 6px;
+  margin-top: 3px;
+  border-radius: 50%;
+  background-color: hsl(231, 7%, 85%);
+}
+.navbar .links a:nth-child(5) {
+  color: hsl(230, 11%, 40%);
+}
+
+.hero {
+  width: 640px;
+  padding: 65px 0 0 165px;
+}
+.hero .overTitle {
+  display: flex;
+  margin-bottom: 20px;
+}
+.hero .overTitle .newSign {
+  width: 45px;
+  height: 25px;
+  border-radius: 20px;
+  padding-top: 2px;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: hsl(230, 29%, 20%);
+  color: white;
+}
+.hero .overTitle p {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: hsl(231, 7%, 65%);
+}
+.hero h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: hsl(230, 29%, 20%);
+}
+.hero .heroText {
+  width: 270px;
+  margin-bottom: 60px;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  color: hsl(230, 11%, 40%);
+}
+.hero .buttonBox {
+  display: flex;
+  align-items: center;
+}
+.hero .buttonBox button {
+  display: inline-block;
+  width: 185px;
+  height: 48px;
+  padding: 0;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: hsl(0, 100%, 68%);
+  color: white;
+}
+.hero .buttonBox p {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: hsl(231, 7%, 65%);
+}
+
+.background {
+  height: 100vh;
+  background: top 210px right -260px url(/images/illustration-devices.svg) no-repeat;
+}
+.background:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 745px;
+  height: 427px;
+  z-index: -50;
+  border-radius: 0 0 0 70px;
+  background-color: hsl(207, 33%, 95%);
+}
+
 /*# sourceMappingURL=main.css.map */
