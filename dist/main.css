@@ -77,11 +77,26 @@ ul {
   width: 380px;
 }
 .navbar .links a {
+  position: relative;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: hsl(230, 29%, 20%);
+}
+.navbar .links a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-top: -2px;
+  background: hsl(230, 29%, 20%);
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
+}
+.navbar .links a:hover:after {
+  transform: scale(1);
 }
 .navbar .links .grayDot {
   width: 6px;
@@ -92,6 +107,9 @@ ul {
 }
 .navbar .links a:nth-child(5) {
   color: hsl(230, 11%, 40%);
+}
+.navbar .links a:nth-child(5):after {
+  background: hsl(230, 11%, 50%);
 }
 .navbar .humburgerButton {
   display: none;
@@ -164,6 +182,10 @@ ul {
   text-transform: uppercase;
   background: hsl(0, 100%, 68%);
   color: white;
+  transition: all 0.12s ease-in-out;
+}
+.hero .buttonBox button:hover {
+  background: hsl(0, 100%, 78%);
 }
 .hero .buttonBox p {
   font-size: 16px;
