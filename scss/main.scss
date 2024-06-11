@@ -4,7 +4,10 @@
 @import "hero";
 
 .background {
+  position: relative;
   height: 100vh;
+  max-width: 1640px;
+  margin: 0 auto;
   background: top 210px right -260px url(/images/illustration-devices.svg) no-repeat;
   &:before {
     position: absolute;
@@ -18,3 +21,8 @@
     background-color: hsl(207, 33%, 95%);
   }
 }
+
+@import "mediaQs";
+@import "mediaBeyond1440";
+
+// width="960" height="464"

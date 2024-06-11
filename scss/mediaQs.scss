@@ -1,0 +1,121 @@
+@media screen and (max-width: 900px) {
+  .background {
+    position: relative;
+    height: 100%;
+    background: top 130px right -140px / auto 235px url(/images/illustration-devices.svg)
+      no-repeat;
+    &:has(.humModalOpen) {
+      height: 100vh;
+      overflow: hidden;
+    }
+    &:before {
+      width: 185px;
+      height: 425px;
+    }
+    .navbar {
+      padding: 37px 32px;
+      margin-bottom: 350px;
+      img {
+        height: 24px;
+        width: 24px;
+      }
+      .links {
+        display: none;
+      }
+      .humburgerButton {
+        display: block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        .line {
+          width: 100%;
+          height: 2px;
+          background-color: #000;
+          margin: 5px 0px;
+          border-radius: 24px;
+          transition: 0.3s ease;
+        }
+      }
+      .opened {
+        .line1 {
+          -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+          transform: rotate(-45deg) translate(-5px, 5px);
+        }
+        .line2 {
+          opacity: 0;
+        }
+        .line3 {
+          -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
+        }
+      }
+    }
+    .humBackgr {
+      display: none;
+      justify-content: center;
+      position: absolute;
+      top: 100px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      .humburgerMenu {
+        top: 100px;
+        height: 230px;
+        width: 310px;
+        box-shadow: 0px 0px 20px hsl(231, 7%, 65%);
+        background-color: white;
+        a {
+          display: block;
+          text-align: center;
+          margin: 22px 0;
+          text-transform: uppercase;
+          font-size: 19px;
+          font-weight: 600;
+          letter-spacing: 0.05em;
+        }
+        hr {
+          border: 0;
+          height: 1px;
+          width: 82%;
+          //   margin-left: 0; /* move to the left */
+          background: hsl(231, 7%, 85%);
+          color: hsl(230, 29%, 20%);
+        }
+        a:nth-child(5) {
+          color: hsl(231, 7%, 65%);
+        }
+      }
+    }
+    .humModalOpen {
+      display: flex;
+    }
+
+    .hero {
+      width: 100%;
+      padding: 32px 32px 100px;
+      .overTitle {
+        p {
+          font-size: 16px;
+        }
+      }
+      h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+      }
+      .heroText {
+        margin-bottom: 30px;
+      }
+      .buttonBox {
+        button {
+          height: 38px;
+          width: 150px;
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+          letter-spacing: 0.15em;
+        }
+      }
+    }
+  }
+}

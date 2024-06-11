@@ -3,6 +3,7 @@
   padding: 65px 0 0 165px;
   .overTitle {
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
     .newSign {
       width: 45px;
@@ -17,6 +18,7 @@
       color: white;
     }
     p {
+      padding-bottom: 2px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: hsl(231, 7%, 65%);
@@ -32,8 +34,8 @@
   .heroText {
     width: 270px;
     margin-bottom: 60px;
-    font-size: 22px;
-    letter-spacing: 0.01em;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
     color: hsl(230, 11%, 40%);
   }
   .buttonBox {
