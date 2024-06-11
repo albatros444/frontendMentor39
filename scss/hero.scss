@@ -1,41 +1,45 @@
 .hero {
   width: 640px;
-  padding: 65px 0 0 165px;
+  padding: 95px 0 0 162px;
   .overTitle {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     .newSign {
-      width: 45px;
+      width: 48px;
       height: 25px;
       border-radius: 20px;
       padding-top: 2px;
       margin-right: 15px;
       font-size: 16px;
       font-weight: 600;
+      letter-spacing: 0.02em;
       text-align: center;
       background-color: hsl(230, 29%, 20%);
       color: white;
     }
     p {
       padding-bottom: 2px;
-      letter-spacing: 0.2em;
+      font-size: 16px;
+      letter-spacing: 0.3em;
       text-transform: uppercase;
       color: hsl(231, 7%, 65%);
     }
   }
   h1 {
-    margin-bottom: 40px;
-    font-size: 60px;
+    margin-bottom: 30px;
+    font-size: 64px;
     text-transform: uppercase;
     line-height: 1;
     color: hsl(230, 29%, 20%);
   }
   .heroText {
-    width: 270px;
-    margin-bottom: 60px;
+    width: 275px;
+    margin-bottom: 63px;
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
+    font-size: 1.04em;
+    line-height: 1.45;
+    letter-spacing: -0.01em;
     color: hsl(230, 11%, 40%);
   }
   .buttonBox {
@@ -46,7 +50,7 @@
       width: 185px;
       height: 48px;
       padding: 0;
-      margin-right: 20px;
+      margin-right: 23px;
       border: none;
       border-radius: 5px;
       outline: inherit;
@@ -54,6 +58,7 @@
       font-family: inherit;
       font-size: 18px;
       font-weight: 600;
+      letter-spacing: 0.02em;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;

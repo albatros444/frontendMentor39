@@ -5,21 +5,35 @@
 
 .background {
   position: relative;
-  height: 100vh;
+  height: auto;
   max-width: 1640px;
   margin: 0 auto;
-  background: top 210px right -260px url(/images/illustration-devices.svg) no-repeat;
+  padding-bottom: 177px;
+  background: top 210px right -266px url(/images/illustration-devices.svg) no-repeat;
   &:before {
     position: absolute;
     content: "";
     top: 0;
     right: 0;
-    width: 745px;
+    width: 709px;
     height: 427px;
     z-index: -50;
-    border-radius: 0 0 0 70px;
+    border-radius: 0 0 0 60px;
     background-color: hsl(207, 33%, 95%);
   }
+  ///shadow of smartphone////
+  &::after {
+    position: absolute;
+    content: "";
+    top: 540px;
+    right: 495px;
+    width: 145px;
+    height: 20px;
+    z-index: -50;
+    background-color: hsl(203, 50%, 41%);
+    box-shadow: 0 20px 40px hsl(231, 7%, 65%, 60%);
+  }
+  ////////
 }
 
 @import "mediaQs";

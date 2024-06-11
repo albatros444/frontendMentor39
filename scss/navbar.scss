@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 65px 165px;
+  padding: 65px 162px;
   img {
     width: 32px;
     height: 32px;
@@ -44,7 +44,7 @@
     a:nth-child(5) {
       color: hsl(230, 11%, 40%);
       &:after {
-        background: hsl(230, 11%, 50%);
+        background: hsl(230, 11%, 50%); //custom
       }
     }
   }
