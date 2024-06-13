@@ -1,32 +1,41 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 719px) {
   .background {
     position: relative;
     height: 100%;
     padding-bottom: 0;
-    background: top 120px right -140px / auto 245px url(/images/illustration-devices.svg)
-      no-repeat;
+    // background: top 120px right -140px / auto calc(39vw + 100px) url(/images/illustration-devices.svg)
+    //   no-repeat; //245px
     &:has(.humModalOpen) {
       height: 100vh;
       overflow: hidden;
     }
     &:before {
-      width: 185px;
-      height: 425px;
+      width: 49.33vw; //185px;
+      height: calc(60vw + 200px); // 425px;
     }
-    &::after {
+    .svgMain {
       position: absolute;
-      content: "";
-      top: 292px;
-      right: 260px;
-      width: 80px;
-      height: 10px;
-      z-index: -50;
-      background-color: hsl(203, 50%, 41%);
-      box-shadow: 0 30px 50px hsla(235, 16%, 59%);
+      right: -140px;
+      top: 120px;
+      height: calc(39vw + 100px);
+      .svgMob {
+        filter: drop-shadow(0 40px 20px hsl(231, 7%, 65%, 20%));
+      }
     }
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   top: 127px; //292px;
+    //   right: calc(62.5vw + 25px);
+    //   width: calc(16vw + 20px);
+    //   height: calc(29vw + 70px);
+    //   z-index: -50;
+    //   background-color: hsl(203, 50%, 41%);
+    //   box-shadow: 0 30px 50px hsla(235, 16%, 59%);
+    // }
     .navbar {
-      padding: 37px 32px;
-      margin-bottom: 320px;
+      padding: 37px 8.53vw; //32px
+      margin-bottom: calc(45.33vw + 150px); // 320px;
       img {
         height: 24px;
         width: 24px;
@@ -70,11 +79,14 @@
       bottom: 0;
       right: 0;
       left: 0;
+      padding: 0 30px;
+
       .humburgerMenu {
         top: 100px;
         height: 230px;
-        width: 315px;
-        box-shadow: 0px 10px 10px hsl(231, 7%, 65%, 30%);
+        width: 100%;
+        max-width: 415px;
+        filter: drop-shadow(0px 10px 10px hsl(231, 7%, 65%, 30%));
         background-color: white;
         a {
           display: block;
@@ -104,7 +116,7 @@
 
     .hero {
       width: 100%;
-      padding: 32px 32px 100px;
+      padding: 32px 8.53vw 100px; //32px
       .overTitle {
         p {
           font-size: 16px;

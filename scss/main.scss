@@ -9,7 +9,8 @@
   max-width: 1640px;
   margin: 0 auto;
   padding-bottom: 177px;
-  background: top 210px right -266px url(/images/illustration-devices.svg) no-repeat;
+  overflow-x: hidden;
+  // background: top 210px right -266px url(/images/illustration-devices.svg) no-repeat;
   &:before {
     position: absolute;
     content: "";
@@ -21,22 +22,33 @@
     border-radius: 0 0 0 60px;
     background-color: hsl(207, 33%, 95%);
   }
-  ///shadow of smartphone////
-  &::after {
+  .svgMain {
     position: absolute;
-    content: "";
-    top: 540px;
-    right: 495px;
-    width: 145px;
-    height: 20px;
-    z-index: -50;
-    background-color: hsl(203, 50%, 41%);
-    box-shadow: 0 20px 40px hsl(231, 7%, 65%, 60%);
+    right: -266px;
+    top: 210px;
+    // width: 960px;
+    height: 464px;
+    .svgMob {
+      filter: drop-shadow(0 40px 20px hsl(231, 7%, 65%, 20%));
+    }
   }
+  ///shadow of smartphone////
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   top: 540px;
+  //   right: 495px;
+  //   width: 145px;
+  //   height: 20px;
+  //   z-index: -50;
+  //   background-color: hsl(203, 50%, 41%);
+  //   box-shadow: 0 20px 40px hsl(231, 7%, 65%, 60%);
+  // }
   ////////
 }
 
 @import "mediaQs";
+@import "mediumMediaQs";
 @import "mediaBeyond1440";
 
 // width="960" height="464"

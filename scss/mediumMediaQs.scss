@@ -1,0 +1,65 @@
+@media screen and (max-width: 1375px) and (min-width: 720px) {
+  .background {
+    padding-bottom: 12vw;
+
+    // background: top 210px right -19.34vw / auto 33.74vw url(/images/illustration-devices.svg)
+    //   no-repeat; //-266px
+    &:before {
+      width: 53.56vw; // 709px;
+      height: 31.05vw; // 427px;
+    }
+    .svgMain {
+      position: absolute;
+      right: -19.34vw;
+      top: calc(7vw + 115px); //210px;
+      height: 33.74vw;
+      .svgMob {
+        filter: drop-shadow(0 40px 20px hsl(231, 7%, 65%, 20%));
+      }
+    }
+    //shadow of smartphone///
+    // &:after {
+    //   top: 220px; // 39.27vw; - 540px;
+    //   right: 35.7vw; //495px;
+    //   width: 10.64vw; // 145px;
+    //   height: 24.72vw;
+    //   //   z-index: 50;
+    // }
+  }
+  .navbar {
+    padding: 4.72vw 11.78vw; //65px 162px
+  }
+  .hero {
+    width: 54.5vw;
+    padding: 6.9vw 0 0 11.78vw; //95px 162px
+    h1 {
+      font-size: 4.66vw;
+    }
+    .heroText {
+      margin-bottom: 4.58vw; //63px;
+    }
+  }
+}
+@media screen and (max-width: 920px) and (min-width: 720px) {
+  .background {
+    &:before {
+      width: 515px; //58.56vw; // 709px;
+      height: 290px; //31.05vw; // 427px;
+    }
+    .svgMain {
+      right: -310px;
+      height: 300px;
+      top: 20vw;
+    }
+    .hero {
+      width: 60vw;
+      .buttonBox {
+        button {
+          width: 148px;
+          height: 38px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

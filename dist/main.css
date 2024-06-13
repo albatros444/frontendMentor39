@@ -120,7 +120,7 @@ ul {
 }
 
 .hero {
-  width: 640px;
+  width: 740px;
   padding: 95px 0 0 162px;
 }
 .hero .overTitle {
@@ -205,7 +205,7 @@ ul {
   max-width: 1640px;
   margin: 0 auto;
   padding-bottom: 177px;
-  background: top 210px right -266px url(/images/illustration-devices.svg) no-repeat;
+  overflow-x: hidden;
 }
 .background:before {
   position: absolute;
@@ -218,47 +218,42 @@ ul {
   border-radius: 0 0 0 60px;
   background-color: hsl(207, 33%, 95%);
 }
-.background::after {
+.background .svgMain {
   position: absolute;
-  content: "";
-  top: 540px;
-  right: 495px;
-  width: 145px;
-  height: 20px;
-  z-index: -50;
-  background-color: hsl(203, 50%, 41%);
-  box-shadow: 0 20px 40px hsla(231, 7%, 65%, 0.6);
+  right: -266px;
+  top: 210px;
+  height: 464px;
+}
+.background .svgMain .svgMob {
+  filter: drop-shadow(0 40px 20px hsla(231, 7%, 65%, 0.2));
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 719px) {
   .background {
     position: relative;
     height: 100%;
     padding-bottom: 0;
-    background: top 120px right -140px/auto 245px url(/images/illustration-devices.svg) no-repeat;
   }
   .background:has(.humModalOpen) {
     height: 100vh;
     overflow: hidden;
   }
   .background:before {
-    width: 185px;
-    height: 425px;
+    width: 49.33vw;
+    height: calc(60vw + 200px);
   }
-  .background::after {
+  .background .svgMain {
     position: absolute;
-    content: "";
-    top: 292px;
-    right: 260px;
-    width: 80px;
-    height: 10px;
-    z-index: -50;
-    background-color: hsl(203, 50%, 41%);
-    box-shadow: 0 30px 50px hsl(235, 16%, 59%);
+    right: -140px;
+    top: 120px;
+    height: calc(39vw + 100px);
+  }
+  .background .svgMain .svgMob {
+    filter: drop-shadow(0 40px 20px hsla(231, 7%, 65%, 0.2));
   }
   .background .navbar {
-    padding: 37px 32px;
-    margin-bottom: 320px;
+    padding: 37px 8.53vw;
+    margin-bottom: calc(45.33vw + 150px);
   }
   .background .navbar img {
     height: 24px;
@@ -300,12 +295,14 @@ ul {
     bottom: 0;
     right: 0;
     left: 0;
+    padding: 0 30px;
   }
   .background .humBackgr .humburgerMenu {
     top: 100px;
     height: 230px;
-    width: 315px;
-    box-shadow: 0px 10px 10px hsla(231, 7%, 65%, 0.3);
+    width: 100%;
+    max-width: 415px;
+    filter: drop-shadow(0px 10px 10px hsla(231, 7%, 65%, 0.3));
     background-color: white;
   }
   .background .humBackgr .humburgerMenu a {
@@ -332,7 +329,7 @@ ul {
   }
   .background .hero {
     width: 100%;
-    padding: 32px 32px 100px;
+    padding: 32px 8.53vw 100px;
   }
   .background .hero .overTitle p {
     font-size: 16px;
@@ -352,6 +349,56 @@ ul {
   .background .hero .buttonBox p {
     font-size: 14px;
     letter-spacing: 0.15em;
+  }
+}
+@media screen and (max-width: 1375px) and (min-width: 720px) {
+  .background {
+    padding-bottom: 12vw;
+  }
+  .background:before {
+    width: 53.56vw;
+    height: 31.05vw;
+  }
+  .background .svgMain {
+    position: absolute;
+    right: -19.34vw;
+    top: calc(7vw + 115px);
+    height: 33.74vw;
+  }
+  .background .svgMain .svgMob {
+    filter: drop-shadow(0 40px 20px hsla(231, 7%, 65%, 0.2));
+  }
+  .navbar {
+    padding: 4.72vw 11.78vw;
+  }
+  .hero {
+    width: 54.5vw;
+    padding: 6.9vw 0 0 11.78vw;
+  }
+  .hero h1 {
+    font-size: 4.66vw;
+  }
+  .hero .heroText {
+    margin-bottom: 4.58vw;
+  }
+}
+@media screen and (max-width: 920px) and (min-width: 720px) {
+  .background:before {
+    width: 515px;
+    height: 290px;
+  }
+  .background .svgMain {
+    right: -310px;
+    height: 300px;
+    top: 20vw;
+  }
+  .background .hero {
+    width: 60vw;
+  }
+  .background .hero .buttonBox button {
+    width: 148px;
+    height: 38px;
+    font-size: 16px;
   }
 }
 
