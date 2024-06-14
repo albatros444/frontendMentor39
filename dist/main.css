@@ -244,7 +244,7 @@ ul {
   }
   .background .svgMain {
     position: absolute;
-    right: -140px;
+    right: -141px;
     top: 120px;
     height: calc(39vw + 100px);
   }
@@ -344,7 +344,8 @@ ul {
   .background .hero .buttonBox button {
     height: 38px;
     width: 155px;
-    font-size: 16px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
   }
   .background .hero .buttonBox p {
     font-size: 14px;

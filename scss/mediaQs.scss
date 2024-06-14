@@ -3,8 +3,6 @@
     position: relative;
     height: 100%;
     padding-bottom: 0;
-    // background: top 120px right -140px / auto calc(39vw + 100px) url(/images/illustration-devices.svg)
-    //   no-repeat; //245px
     &:has(.humModalOpen) {
       height: 100vh;
       overflow: hidden;
@@ -15,24 +13,13 @@
     }
     .svgMain {
       position: absolute;
-      right: -140px;
+      right: -141px;
       top: 120px;
       height: calc(39vw + 100px);
       .svgMob {
         filter: drop-shadow(0 40px 20px hsl(231, 7%, 65%, 20%));
       }
     }
-    // &::after {
-    //   position: absolute;
-    //   content: "";
-    //   top: 127px; //292px;
-    //   right: calc(62.5vw + 25px);
-    //   width: calc(16vw + 20px);
-    //   height: calc(29vw + 70px);
-    //   z-index: -50;
-    //   background-color: hsl(203, 50%, 41%);
-    //   box-shadow: 0 30px 50px hsla(235, 16%, 59%);
-    // }
     .navbar {
       padding: 37px 8.53vw; //32px
       margin-bottom: calc(45.33vw + 150px); // 320px;
@@ -133,7 +120,8 @@
         button {
           height: 38px;
           width: 155px;
-          font-size: 16px;
+          font-size: 13px;
+          letter-spacing: 0.1em;
         }
         p {
           font-size: 14px;
